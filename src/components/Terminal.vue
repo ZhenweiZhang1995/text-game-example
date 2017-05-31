@@ -110,6 +110,8 @@ export default {
       let scrollwindow = this.$el.querySelector('.scroll-window')
       scrollwindow.scrollTop = scrollwindow.scrollHeight
       this.command = ''
+      responsiveVoice.speak(reply, "UK English Female",
+          {pitch: 1},{rate:0.5});}
     },
     addToHistory: function () {
       this.history.push('> ' + this.command)
